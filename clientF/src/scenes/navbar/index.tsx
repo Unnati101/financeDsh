@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import PixIcon from "@mui/icons-material/Pix";
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import FlexBetween from "@/components/FlexBetween";
+import Logo from "../../assets/Analytica.png";
 
 type Props = {};
 
@@ -13,10 +13,7 @@ const Navbar = (props: Props) => {
     <FlexBetween mb="0.25rem" p="0.5rem 0rem" color={palette.grey[300]}>
       {/* LEFT SIDE */}
       <FlexBetween gap="0.75rem">
-        <PixIcon sx={{ fontSize: "28px" }} />
-        <Typography variant="h4" fontSize="16px">
-          Finanseer
-        </Typography>
+      <img src={Logo} alt="logo" style={{ width: '100px' }} />
       </FlexBetween>
 
       {/* RIGHT SIDE */}
