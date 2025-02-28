@@ -1,48 +1,51 @@
 export const tokens = {
   grey: {
-    100: "#f0f0f3",
-    200: "#e1e2e7",
-    300: "#d1d3da",
-    400: "#c2c5ce",
-    500: "#b3b6c2",
-    600: "#8f929b",
-    700: "#6b6d74",
-    800: "#48494e",
-    900: "#242427",
+    100: "#e6e6e6",
+    200: "#cccccc",
+    300: "#b3b3b3",
+    400: "#999999",
+    500: "#808080",
+    600: "#666666",
+    700: "#4d4d4d",
+    800: "#333333",
+    900: "#1a1a1a",
   },
   primary: {
-    // light green
-    100: "#d0fcf4",
-    200: "#a0f9e9",
-    300: "#71f5de",
-    400: "#41f2d3",
-    500: "#12efc8",
-    600: "#0ebfa0",
-    700: "#0b8f78",
-    800: "#076050",
-    900: "#043028",
+    // Darker Burnt Orange
+    100: "#f8e0c2",
+    200: "#f2c999",
+    300: "#eeb272",
+    400: "#ea9b4b",
+    500: "#e68424",
+    600: "#c86f1c",
+    700: "#a05915",
+    800: "#78430e",
+    900: "#502d08",
   },
   secondary: {
-    // yellow
-    100: "#fcf0dd",
-    200: "#fae1bb",
-    300: "#f7d299",
-    400: "#f5c377",
-    500: "#f2b455",
-    600: "#c29044",
-    700: "#916c33",
-    800: "#614822",
-    900: "#302411",
+    // Deep Goldenrod Yellow
+    100: "#f7e7b0",
+    200: "#eecd77",
+    300: "#e5b43e",
+    400: "#db9b05",
+    500: "#c28500",
+    600: "#9a6a00",
+    700: "#735000",
+    800: "#4c3600",
+    900: "#261b00",
   },
   tertiary: {
-    // purple
-    500: "#8884d8",
+    // Dark Burgundy
+    500: "#66001a",
   },
   background: {
-    light: "#2d2d34",
-    main: "#1f2026",
+    light: "#f2e1cf",
+    main: "#171717",
   },
 };
+
+
+
 
 // mui theme settings
 export const themeSettings = {
@@ -61,7 +64,7 @@ export const themeSettings = {
     },
     grey: {
       ...tokens.grey,
-      main: tokens.grey[500],
+      main: tokens.grey[900],
     },
     background: {
       default: tokens.background.main,
@@ -83,24 +86,24 @@ export const themeSettings = {
       fontFamily: ["Inter", "sans-serif"].join(","),
       fontSize: 20,
       fontWeight: 800,
-      color: tokens.grey[200],
+      color: tokens.grey[900],
     },
     h4: {
       fontFamily: ["Inter", "sans-serif"].join(","),
       fontSize: 14,
       fontWeight: 600,
-      color: tokens.grey[300],
+      color: tokens.grey[900],
     },
     h5: {
       fontFamily: ["Inter", "sans-serif"].join(","),
       fontSize: 12,
       fontWeight: 400,
-      color: tokens.grey[500],
+      color: tokens.grey[900],
     },
     h6: {
       fontFamily: ["Inter", "sans-serif"].join(","),
       fontSize: 10,
-      color: tokens.grey[700],
+      color: tokens.grey[900],
     },
   },
 };
